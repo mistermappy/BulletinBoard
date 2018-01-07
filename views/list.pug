@@ -1,13 +1,19 @@
 doctype html
 html
   head
-    link(href='styling.css', rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Pacifico', rel='stylesheet')
+  style.
+    body {background-color: #F5B041;}
+    h1 {color: red; font-family: 'Pacifico'}
+    #container {text-align: center; font-family: 'Pacifico'}
+    h2 {border: 2px solid;}
   body
-    h1 Main Page for displaying previous posts
-    if posts
-    each post in posts
-      h3= post.title
-      p= post.body
-    else
-      h2 no posts here
-    a(href='/form') Click Here
+    #container
+      h1 Main Page for displaying previous posts
+      a(href='/form') Create New Post
+      if posts
+      each post in posts
+        h2= post.title
+        p= post.body
+      else
+        h2 no posts here

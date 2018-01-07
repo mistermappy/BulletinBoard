@@ -1,11 +1,18 @@
 doctype html
 html
   head
-    link(href='styling.css', rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Pacifico', rel='stylesheet')
+  style.
+      body {background-color: #F5B041;}
+      h1 {color: red;}
+      #container {text-align: center; font-family: 'Pacifico'}
   body
-    h1 Form for creating new posts will be here!
-    form(method='POST', action='/form')
-      input(type='text', name='title', placeholder='Title' required)
-      textarea(name='body' rows='4', cols='50' required)
-      input(type='submit', value='Click')
-    a(href='/') Click Here
+    #container
+      h1 Create Post
+      form(method='POST', action='/form')
+        input(type='text', name='title', placeholder='Title' required)
+        br
+        textarea(name='body' rows='4', cols='50' required)
+        br
+        input(type='submit', value='Post')
+      a(href='/') Head Back to Main Page
