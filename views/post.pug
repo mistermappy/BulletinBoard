@@ -4,9 +4,8 @@ html
     link(href='styling.css', rel='stylesheet')
   body
     h1 Form for creating new posts will be here!
-    form
-      input(type='text', value='type something here')
-      input(type='text', value='type something here')
-      input(type='text', value='type something here')
-
+    form(method='POST', action='/form')
+      input(type='text', name='title', placeholder='Title' required)
+      textarea(name='body' rows='4', cols='50' required)
+      input(type='submit', value='Click')
     a(href='/') Click Here

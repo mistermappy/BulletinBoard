@@ -4,4 +4,10 @@ html
     link(href='styling.css', rel='stylesheet')
   body
     h1 Main Page for displaying previous posts
-    a(href='/post') Click Here
+    if posts
+    each post in posts
+      h3= post.title
+      p= post.body
+    else
+      h2 no posts here
+    a(href='/form') Click Here

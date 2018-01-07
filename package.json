@@ -18,9 +18,12 @@
   },
   "homepage": "https://github.com/mistermappy/BulletinBoard#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "browser-refresh": "^1.7.2",
     "express": "^4.16.2",
-    "pg": "^7.4.1",
+    "express-validator": "^4.3.0",
+    "pg": "^6.4.2",
+    "pg-hstore": "^2.3.2",
     "pug": "^2.0.0-rc.4",
     "sequelize": "^4.29.0"
   }
